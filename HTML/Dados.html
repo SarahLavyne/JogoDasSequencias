@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <link rel="stylesheet" href="../CSS/p2.css">
+</head>
+<body>
+<div class="container-jogo">
+        <h1 class="titulo">DADOS DO JOGO</h1>
+        <p class="subtitulo">Insira os seu nome para poder iniciar o jogo</p>
+        
+        <div class="form-container">
+            <input 
+                type="text" 
+                class="CampoEntrada"
+                id="NomeJogador" 
+                placeholder="Nome do jogador..."
+                maxlength="20"
+            >
+            
+            <button class="TutorialJogo" onclick="window.location.href='Tutorial.html'">
+                Tutorial do jogo
+            </button>
+            
+            <button class="botao-play" id="botaoplay" onclick="startGame()" disabled>
+                LET'S PLAY!
+            </button>
+        </div>
+        
+        <div class="Grama">
+            <div class="Terra"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

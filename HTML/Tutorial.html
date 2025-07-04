@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <link rel="stylesheet" href="../CSS/p3.css">
+</head>
+<body>
+<body>
+    <div class="tutorial-container">
+        <h1 class="titulo">COMO JOGAR</h1>
+        
+        <div class="container-tutorial">
+            <div class="selecao">
+                <h2 class="titulo-selecao">🎯 OBJETIVO</h2>
+                <p class="selecao-texto">
+                    Descubra a sequência secreta de 5 números (de 1 a 9) em até 5 tentativas!
+                </p>
+            </div>
+            
+            <div class="selecao">
+                <h2 class="titulo-selecao">🎮 COMO JOGAR</h2>
+                <p class="selecao-texto">
+                    1. Digite 5 números de 0 a 9 nos campos de entrada<br>
+                    2. Clique em "SUBMETER" para enviar sua tentativa<br>
+                    3. Observe as cores que aparecem no quadra<br>
+                    4. Use as dicas para fazer sua próxima tentativa<br>
+                    5. Para editar clique no quadrado desejado<br>
+                    6. Ao editar, digite novamente sua sequência para confirma
+                </p>
+            </div>
+            
+            <div class="selecao">
+                <h2 class="titulo-selecao">🎨 SISTEMA DE CORES</h2>
+                <div class="exemplo-cores">
+                    <div class="caixa-cor">
+                        <div class="quadrado-cor verde">5</div>
+                        <div class="cor">VERDE<br>Posição Correta</div>
+                    </div>
+                    <div class="caixa-cor">
+                        <div class="quadrado-cor amarelo">3</div>
+                        <div class="cor">AMARELO<br>Número Correto<br>Posição Errada</div>
+                    </div>
+                    <div class="caixa-cor">
+                        <div class="quadrado-cor vermelho">7</div>
+                        <div class="cor">VERMELHO<br>Número Não Existe<br>na Sequência</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="selecao">
+                <h2 class="titulo-selecao">📊 EXEMPLO</h2>
+                <p class="selecao-texto">
+                    Sequência secreta: 1 2 3 4 5<br>
+                    Sua tentativa: 1 5 7 4 9
+                </p>
+                <div class="exemplo">
+                    <div class="celula-ex verde">1</div>
+                    <div class="celula-ex amarelo">5</div>
+                    <div class="celula-ex vermelho">7</div>
+                    <div class="celula-ex verde">4</div>
+                    <div class="celula-ex vermelho">9</div>
+                </div>
+            </div>
+            
+            <div class="selecao">
+                <h2 class="titulo-selecao">🏆 PONTUAÇÃO</h2>
+                <div class="tabela-pontos">
+                    <div class="pontos">
+                        <span>Posição Correta (Verde):</span>
+                        <span>+100 pontos</span>
+                    </div>
+                    <div class="pontos">
+                        <span>Posição Errada (Amarelo):</span>
+                        <span>+50 pontos</span>
+                    </div>
+                    <div class="pontos">
+                        <span>Por Tentativa:</span>
+                        <span>-50 pontos</span>
+                    </div>
+                    <div class="pontos">
+                        <span>Bônus de Conclusão:</span>
+                        <span>+500 pontos</span>
+                    </div>
+                    <div class="pontos">
+                        <span>Bônus de Velocidade:</span>
+                        <span>+100 × tentativas restantes</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="selecao">
+                <h2 class="titulo-selecao">💡 DICAS</h2>
+                <p class="selecao-texto">
+                    • Comece com números variados para descobrir quais estão na sequência<br>
+                    • Use as cores para eliminar possibilidades<br>
+                    • Números podem se repetir na sequência secreta<br>
+                    • Você tem 6 tentativas, use-as com sabedoria!<br>
+                    • Os números podem se repetir<br>
+                    • Caso você tente digitar e não der certo, clique na caixa de número que fica a cima do botão submeter
+                </p>
+            </div>
+        </div>
+        
+        <button class="botao-voltar" onclick="window.location.href='Dados.html'">← VOLTAR</button>
+        
+        <div class="Grama">
+            <div class="Terra"></div>
+        </div>
+    </div>
+</body>
+</html>
