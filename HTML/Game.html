@@ -7,70 +7,74 @@
     <link rel="stylesheet" href="../CSS/p4.css">
 </head>
 <body>
- <div class="container-jogo">
-        <div class="jogoElemento">
-            <div class="pontos-display">
+    <div class="container-jogo">
+        <div class="cabecalho-jogo">
+            <div class="exibicao-pontos">
                 PONTOS: <span id="valorPontos">0</span>
             </div>
         </div>
         
         <h1 class="titulo">DÊ SEU PALPITE</h1>
         
-        <div class="grade-jogo" id="grade-jogo">
+        <div class="grade-jogo" id="gradeJogo">
+            <!-- Grade será gerada dinamicamente -->
         </div>
         
-        <div class="area-selecao">
-            <input type="text" 
-       class="entrada-numero" 
-       id="numeroEntrada" 
-       placeholder="?" 
-       maxlength="1" 
-       pattern="\d" 
-       inputmode="numeric" 
-       autocomplete="off" />
-
-            <button class="botao-Submissao" id="botaoSubmissao">SUBMETER</button>
+        <div class="secao-entrada">
+            <input type="text"
+                   class="entrada-numero"
+                   id="entradaNumero"
+                   placeholder="?"
+                   maxlength="1"
+                   pattern="\d"
+                   inputmode="numeric"
+                   autocomplete="off" />
+            <button class="botao-enviar" id="botaoEnviar">SUBMETER</button>
         </div>
         
         <!-- Elementos do cenário -->
-            <div class="elementos-jogo tubo-baixo">
+        <div class="canos-esquerda">
+            <div class="elemento-jogo cano-baixo-esquerda">
                 <img src="../../Imagens/cano_baixo.png" alt="Cano Baixo" />
             </div>
-            <div class="elementos-jogo tubo-alto">
+            <div class="elemento-jogo cano-alto-esquerda">
                 <img src="../../Imagens/Cano.png" alt="Cano Alto" />
             </div>
-            <div class="elementos-jogo moeda">
+            <div class="elemento-jogo moeda-esquerda">
                 <img src="../../Imagens/Moeda.png" alt="Moeda" />
             </div>
-
-        <div class="elementos-jogo tijolos">
+        </div>
+        
+        <div class="elemento-jogo plataforma-tijolo-direita">
             <img src="../../Imagens/Tijolo.png" alt="Plataforma de Tijolos" />
         </div>
         
-        <div class="elementos-jogo estrela">
+        <div class="elemento-jogo estrela-direita">
             <img src="../../Imagens/Estrela.png" alt="Estrela" />
         </div>
         
-        <div class="elementos-jogo flor">
+        <div class="elemento-jogo flor-direita">
             <img src="../../Imagens/PlantaCarnivora.png" alt="Flor" />
         </div>
         
-        <div class="elementos-jogo cogumelo">
+        <div class="elemento-jogo cogumelo">
             <img src="../../Imagens/Cogumelo1.png" alt="Cogumelo" />
         </div>
-
-        <div class="Grama">
-            <div class="Terra"></div>
+        
+        <div class="chao">
+            <div class="terra"></div>
         </div>
     </div>
     
-    <div class="Game-over" id="gameover">
-        <div class="modelo-container">
-            <div class="modelo-titulo" id="modeloTitulo">GAME OVER!</div>
-            <div class="modelo-texto" id="modeloTexto"></div>
-            <button class="botao-Submissao" onclick="restartGame()">JOGAR NOVAMENTE</button>
-            <button class="botao-Submissao" onclick="goToMenu()" style="margin-left: 10px;">MENU</button>
+    <!-- Modal de Game Over -->
+    <div class="modal-fim-jogo" id="modalFimJogo">
+        <div class="conteudo-modal">
+            <div class="titulo-modal" id="tituloModal">GAME OVER!</div>
+            <div class="texto-modal" id="textoModal"></div>
+            <button class="botao-enviar" onclick="reiniciarJogo()">JOGAR NOVAMENTE</button>
+            <button class="botao-enviar" onclick="irParaMenu()" style="margin-left: 10px;">MENU</button>
         </div>
     </div>
+    <script src="../JavaScript/Script2.js"></script> 
 </body>
 </html>
